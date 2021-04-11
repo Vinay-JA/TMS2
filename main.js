@@ -20,7 +20,7 @@ recognition.onresult = function (event) {
 }
 function speak() {
     var swnt = window.speechSynthesis;
-    var speek_data = "taking selfie in 5 seconds";
+    var speek_data = "taking selfie in 10 seconds";
     var utterthis = new SpeechSynthesisUtterance(speek_data);
     swnt.speak(utterthis);
     Webcam.attach(camera);
@@ -28,7 +28,7 @@ function speak() {
         tms();
         save();
 
-    },5000);                  
+    },10000);                  
       
 }
 camera = document.getElementById("camera");
